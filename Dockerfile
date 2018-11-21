@@ -1,3 +1,3 @@
 FROM composer
-RUN composer global require "laravel/lumen-installer"
+# RUN php composer update
 ENV PATH $PATH:/tmp/vendor/bin

@@ -6,9 +6,9 @@ nginx:
   ports:
     - "80:80"
 php:
-  build: images/php
+  build: ./
   volumes:
-    - ./images/php:/var/www/html
+    - ./:/var/www/html
   working_dir: /var/www/html/app/public
   command: php-fpm
   links:
